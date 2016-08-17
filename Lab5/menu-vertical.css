@@ -1,0 +1,62 @@
+﻿body {
+    background-image:url("forest.jpg");
+}
+#menu-v, #menu-v ul
+{
+    width: 200px; 
+    border: 1px solid #ccc;
+    border-top:none;
+    position: absolute; font-size:0;
+    top:25%;
+    left: 30%;
+    list-style: none; margin: 0; padding: 0; display:block;
+    z-index:9;
+}
+                
+
+#menu-v li
+{
+    background-color: #FFF;
+    list-style: none; margin: 0; padding: 0;
+}
+#menu-v li a
+{
+    font: normal 12px Arial;
+    border-top: 1px solid #ccc;
+    display: block;
+    color: black;
+    text-decoration: none;
+    line-height:26px;
+    padding-left:26px;            
+}
+#menu-v ul li a
+{
+    line-height:30px;
+}
+                
+        
+#menu-v li ul
+{
+    position: absolute;
+    width: 200px;
+    visibility:hidden;
+}
+        
+#menu-v a.onearrow
+{
+    background-image:url(arrowon.gif);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 18px;
+}
+
+#menu-v ul li
+{
+    background: rgba(255, 255, 255, 0.86);
+    background-image:none;
+}
+#menu-v ul li:hover, #menu-v ul li.ihover
+{
+    background: #FFF;
+    background-image:none;
+}

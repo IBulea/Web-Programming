@@ -1,0 +1,43 @@
+body {
+    background-image:url("paper.jpg");
+}
+
+h2 {
+color:#003366;
+left:45%;
+position:relative;}
+
+h2:hover {
+color:#70db70;
+}
+.content{
+position:absolute;
+left:30%;
+width:550px;
+}
+p {
+margin-bottom:100px;
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    background: #1e5799;
+    background: linear-gradient(to right,  #1e5799 50%,#7db9e8 50%);
+    position:relative;
+}
+
+.lista {
+list-style: none;
+padding: 10px;
+width: 530px;
+float: left;
+position:absolute;
+background: #3ae99d;
+opacity:0.7;
+}
+
+ul li:hover
+{text-decoration: underline;
+opacity:1;
+background:#7db9e8;}

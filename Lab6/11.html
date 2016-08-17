@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Lab6</title>
+
+<script src="jquery-2.0.3.js"></script>
+
+<script>
+$(document).on('click', 'input[name="cmdAddRow"]', function() {
+    var $curRow = $(this).closest('tr'),
+        $newRow = $curRow.clone(true).find('input:text').val("").end();
+	$newRow.find('input:text').prop("readonly",false);
+    $curRow.after($newRow);
+});
+
+
+$(document).on('click', 'input[name="savetable"]', function() {
+    var canBeReadOnly = true;
+    if($(document).find('input:text').val().lenght == 0){
+	canBeReadOnly = false;
+	/*$(document).find('input:text').val("mamama");*/	
+    }
+    if(canBeReadOnly == true) 
+	$(document).find('input:text').prop("readonly",true);
+});
+
+</script>
+
+</head>
+
+<body>
+    <input type="button" name="savetable" value="Save Table" style="position:absolute;top:15%;left:45%;">
+    <div id="tablediv" style="position:absolute;top:25%;left:7%;">
+        <br>
+        <table border="1" id="POITable">
+            <tr>
+                <td>Delete Buttons</td>
+                <td>First</td>
+                <td>Second</td>
+                <td>Third</td>
+                <td>Fourth</td>
+		<td>Fifth</td>
+		<td>Add Buttons</td>
+            </tr>
+            <tr>
+		<td><input id="delbutton" onclick="$(this).closest('tr').remove();" type=
+                "button" value="Delete Row"></td>
+		<div class="input">
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+					<td><input id="inbox" size="25" type="text" value="ee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+			<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                </div>
+	       <td><input type="button" name="cmdAddRow" value="Add Row"></td>
+            </tr>
+	     <tr>
+		<td><input id="delbutton" onclick="$(this).closest('tr').remove();" type=
+                "button" value="Delete Row"></td>
+		<div class="input">
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+			<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+			<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+		</div>
+		<td><input type="button" name="cmdAddRow" value="Add Row"></td>
+            </tr>
+
+ 	     <tr>
+		<td><input id="delbutton" onclick="$(this).closest('tr').remove();" type=
+                "button" value="Delete Row"></td>
+		<div class="input">
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+			<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+			<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+		</div>
+		<td><input type="button" name="cmdAddRow" value="Add Row"></td>
+            </tr>
+	     <tr>
+		<td><input id="delbutton" onclick="$(this).closest('tr').remove();" type=
+                "button" value="Delete Row"></td>
+		<div class="input">
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+			<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+			<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+		</div>
+		<td><input type="button" name="cmdAddRow" value="Add Row"></td>
+            </tr>
+
+	     <tr>
+		<td><input id="delbutton" onclick="$(this).closest('tr').remove();" type=
+                "button" value="Delete Row"></td>
+		<div class="input">
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+			<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+                	<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+			<td><input id="inbox" size="25" type="text" value="eee" readonly="true"></td>
+		</div>
+		<td><input type="button" name="cmdAddRow" value="Add Row"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

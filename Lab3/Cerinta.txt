@@ -1,0 +1,3 @@
+Write a web page with a transparrent div in the center containing various text/information. The transparrent div should have round corners. When the mouse is over the div, the div should have right corners.
+
+Write a web page which should contain a rise-up horizontal menu (as oposed to a drop-down horizontal menu). The menu should be displayed in the bottom of the page and should contain at least 5 items (displayed horizontaly, side by side) and each item should contain at least 5 commands.

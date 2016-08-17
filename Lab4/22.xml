@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE collection SYSTEM "collection.dtd">
+<?xml-stylesheet type="text/css" href="22.css"?>
+<?xml-stylesheet type="text/xsl" href="22.xsl"?>
+<bibliography>
+	<element>
+		<title>High Performance TCP Networking</title>
+		<author>Dana Anticarian</author>
+		<date>12.12.2012</date>
+		<editor>Prentice Hall</editor>
+	</element> 
+	<element>
+		<title>TCP Networking</title>
+		<author>Andrei Baciu</author>
+		<date>12.12.2012</date>
+		<editor>Prentice Hall</editor>
+	</element> 
+	<element>
+		<title>This is an article</title>
+		<author>Ioana Bulea</author>
+		<date>12.12.2012</date>
+		<editor>Prentice Hall</editor>
+	</element> 
+	<element>
+		<title>This is a book</title>
+		<author>Zaheed Massani</author>
+		<date>12.12.2012</date>
+		<editor>Prentice Hall</editor>
+	</element> 
+	<element>
+		<title>Transactional Information Systems</title>
+		<author>Gottfried Vossen</author>
+		<author>Gerhard Weikum</author>
+		<date>01.01.2001</date>
+		<editor>Morkan Kaufman Publishing</editor>
+	</element>
+	<element>
+		<title>Mathematical Encyclopedia</title>
+		<author>Eric Weistein</author>
+		<date>15.10.2015</date>
+		<editor>Addison Wesley</editor>
+	</element>
+</bibliography>

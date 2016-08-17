@@ -1,0 +1,303 @@
+* {margin:0;padding:0}
+body {
+    font-family: verdana;
+    font-size: 1em;
+    background-color:#F8F8F8
+}
+
+h2 {color:#003366;
+left:}
+#LeftSide {background: white;}
+#main {background: white;}
+html {overflow: hidden;}
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.header{
+    position: absolute;
+    top: 0px;    
+    left: 0px;
+    width:100%;
+    height: 70px;
+    overflow: hidden;
+    background-color:#F8F8F8;
+}
+
+h3 {background-color:#003366;}
+ul.topBar{height:22px;
+	width:100%;
+	position:absolute;
+	background-color:#003366;
+	margin:0px;
+	padding:0px;
+	margin-bottom:0px;
+	list-style-type: none;}
+a.top{
+	color:white;
+	text-decoration:none;
+}
+
+a.top:hover{
+	text-decoration:underline;
+}
+
+li.top{
+	display:inline;
+	padding:15px;
+	background-color:transparent;
+	color:white;
+	font-family:Arial;
+	font-size:13px;
+	padding-left:6px;
+	padding-top:6px;
+}
+
+.next{
+	height:70px;
+	width:100%;
+	padding-top:22px;
+	border:2px;
+}
+
+#search-text-input{
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border-bottom:0;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    height:17px;
+    margin:.8em 0 0 .5em; 
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+    width:400px;
+    margin-left:50px;
+}
+
+.button-holder{
+    background-color:#f1f1f1;
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    display:inline;
+    height:27px;
+    padding:.2em .6em .45em .6em; 
+    margin:11px 0 0 0;
+    text-align:center; 
+    width:50px;
+}
+ul.searchBar{
+	margin:0px;
+	padding:0px;
+	margin-bottom:0px;
+	list-style-type: none;
+}
+li.searchBar{
+	display:inline;
+}
+
+a.side{
+	font-family:Arial;
+	color:#003366;
+	background-color:transparent;
+	
+}
+a.side:hover{
+	text-decoration:underline;
+}
+
+
+
+#main {
+    position: absolute;    
+    top: 120px;
+    left: 240px;
+    right: 400px;
+    bottom: 20px;
+    overflow: auto;
+}
+#LeftSide {    
+    position: absolute;    
+    top: 120px;
+    left: 20px;
+    bottom: 20px;
+    width: 200px;
+    overflow: auto;    
+}
+#RightSide {    
+    position: absolute;    
+    top: 120px;
+    left: 990px;
+    bottom: 20px;
+    width: 320px;
+    overflow: auto;    
+}
+
+#content {    
+   position: absolute;    
+    top: 770px;
+    left: 20px;
+    right: 20;
+    bottom: 20px;
+    height: 800;
+    width: 685;
+    overflow: auto;   
+}
+
+
+.articles
+{
+	width:680px;
+	height:750px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#D8D8D8;
+}
+
+
+iframe{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+#imgBox {
+    opacity: 1.0;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#imgBox:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+ol.two-columns {
+	float:left;
+	position:relative;
+	margin:0px;
+	padding-left:70px;
+}
+
+.slide{
+	float:left;
+	width:600px;
+	height:400px;
+	margin-left:50px;
+	position:relative;
+}
+
+.slide1{
+	float:left;
+	width:600px;
+	height:80px;
+	margin-left:50px;
+	position:relative;
+}
+
+.slide figure{
+   margin: 0;
+   width:600px;
+   height:400px;
+   position: absolute;
+}
+
+.slide1 figure{
+   margin: 0;
+   width:60px;
+   height:60px;
+   position: absolute;
+}
+
+.slide figcaption{
+   position: absolute;
+   bottom: 0;
+   color: #fff;
+   background: rgba(0,0,0, .3);
+   font-size: .8em;
+   padding: 8px 12px;
+   opacity: 1;
+   transition: opacity .5s;
+}
+.slide:hover figure figcaption{
+   transition: opacity .5s;
+   opacity: 1;
+   background-color:#404040   ;
+}
+
+.slide a{
+  color: #666;
+}
+.slide figure{
+  opacity:0;
+}
+
+figure:nth-child(5) {
+   animation: xfade 25s 20s infinite;
+}
+figure:nth-child(4) {
+   animation: xfade 25s 15s infinite;
+}
+figure:nth-child(3) {
+   animation: xfade 25s 10s infinite;
+}
+figure:nth-child(2) {
+   animation: xfade 25s 5s infinite;
+}
+figure {
+   animation: xfade 25s 0s infinite;
+}
+@keyframes xfade{
+   0%{
+      opacity: 1;
+   }
+   10.5% {
+      opacity:1;
+   }
+   80%{
+   opacity:0;
+   }
+   
+  98%{
+		opacity:0;
+  }
+   100% {
+      opacity:1;
+   }
+}
+
+.imageHolder { 
+	display:inline;
+	position: relative; 
+	width: 100px; 
+	height: 100px; } 
+.imageHolder .caption { 
+	opacity: 0; 
+	position: absolute; 
+	height:60px; 
+	width: 100px;  
+	color: black; 
+	bottom: 0px; left: 0px; padding: 2px 0px;
+	background: white; 
+	text-align: center; 
+} 
+.imageHolder:hover .caption { 
+	opacity: 0.7; 
+}
+
+.TabNav {
+          display: inline; 
+	  margin-top: 800;
+	  height:500;     
+      }
+.innerdiv {
+          display: none;       
+      }
+div.TabNav:hover .innerdiv {
+       display: block;
+       position: absolute;
+       top: 120px;
+}
